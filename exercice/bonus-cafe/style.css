@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;600;700&display=swap");
+main {
+  font-family: "Andada Pro", serif;
+}
+.dark {
+  background: url("images/image\ 62.png");
+  background-color: rgb(44, 45, 45);
+  color: whitesmoke;
+}
+.black_link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.centrer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: #0f0f0f;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+.icons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+}
+h1 {
+  color: #bc9a6c;
+}
+.bigger {
+  transform: scale(1.1);
+  transform-origin: center;
+}
+.button1,
+.button2 {
+  padding: 14px 40px;
+
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button1 {
+  background-color: #c39a6b;
+  color: white;
+  border: none;
+}
+.button2 {
+  background: transparent;
+  color: #c39a6b;
+  border: 2px solid #c39a6b;
+}
+.centrer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: #ffffff;
+}
+.centrer3 {
+  text-align: center;
+  padding: 15px 60px;
+  background-color: #ffffff;
+  justify-content: center;
+}
