@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;600;700&display=swap");
 main {
   font-family: "Andada Pro", serif;
 }
@@ -74,4 +73,8 @@ h1 {
   padding: 15px 60px;
   background-color: #ffffff;
   justify-content: center;
+}
+body {
+  margin: 0px;
+  padding: 0px;
 }
