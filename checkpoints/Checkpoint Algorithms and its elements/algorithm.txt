@@ -1,0 +1,23 @@
+program AnalysePhrase;
+var
+    car : char;
+    long, mots, voy : integer;
+begin
+    long := 0;
+    mots := 1;
+    voy := 0;
+    write('Entrez une phrase qui se termine par un point : ');
+    read(car);
+    while car <> '.' do
+    begin
+        long := long + 1;
+        if car = ' ' then
+            mots := mots + 1;
+        if (car in ['a','e','i','o','u','A','E','I','O','U']) then
+            voy := voy + 1;
+        read(car);
+    end;
+    writeln('Longueur : ', long);
+    writeln('Mots : ', mots);
+    writeln('Voyelles : ', voy);
+end.
