@@ -1,0 +1,13 @@
+Voici un extrait de code HTML/CSS pour une carte de prix avec des problèmes de mise en page et des boutons qui ne répondent pas.
+Peux-tu :
+ 
+  1. Identifier et corriger tous les bugs liés à la mise en page et au style,
+    notamment les erreurs CSS et la structure HTML.
+  2. Refactorer ce code en un composant réutilisable appelé Card qui prend en paramètres :
+     - title (le nom du plan)
+     - price (le prix)
+     - features (une liste des fonctionnalités)
+  3. Me fournir le code corrigé complet du composant prêt à être utilisé dans
+     un projet.
+       
+ Voici le code initial :
