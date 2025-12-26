@@ -1,0 +1,136 @@
+/* ===== Thèmes clair / sombre ===== */
+:root {
+    --bg-color: #fdf6e3;
+    --text-color: #222222;
+    --card-bg: linear-gradient(135deg, #ffecd2, #fcb69f);
+    --card-hover: linear-gradient(135deg, #f6d365, #fda085);
+    --shadow-color: rgba(0,0,0,0.2);
+}
+
+body.dark-theme {
+    --bg-color: #1e1e2f;
+    --text-color: #ffffff;
+    --card-bg: linear-gradient(135deg, #3a3a5e, #5e5e8a);
+    --card-hover: linear-gradient(135deg, #5e5e8a, #7e7eb8);
+    --shadow-color: rgba(0,0,0,0.5);
+}
+
+/* ===== Styles globaux ===== */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 30px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+/* ===== Switch Thème ===== */
+.theme-switcher {
+    position: absolute;
+    right: 30px;
+    width: 60px;
+    height: 30px;
+    background: #ccc;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.theme-switcher .switch {
+    width: 26px;
+    height: 26px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Déplacer la boule selon le thème */
+body.dark-theme .theme-switcher .switch {
+    transform: translateX(30px);
+}
+
+/* Changer l’icône dans le switch selon le thème */
+body.dark-theme .theme-switcher .switch .icon {
+    content: '😴';
+}
+
+body:not(.dark-theme) .theme-switcher .switch .icon {
+    content: '🤪';
+}
+
+/* ===== Galerie ===== */
+.gallery {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ===== Cartes ===== */
+.card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 10px 20px var(--shadow-color);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+.card img {
+    width: 100%;          
+    height: 305px;        
+    object-fit: cover;    
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* ===== Effet survol ===== */
+.card:hover {
+    transform: translateY(-15px) rotate(-1deg) scale(1.05);
+    background: var(--card-hover);
+    box-shadow: 0 20px 30px var(--shadow-color);
+}
+
+/* ===== Animation fondu ===== */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* ===== Texte ===== */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+}
